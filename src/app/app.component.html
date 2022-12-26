@@ -8,10 +8,10 @@
               <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Favorites</span> </a>
             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
               <li class="w-100">
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Inbox</span> 1 </a>
+                <a routerLink="/inbox" class="nav-link px-0"> <span class="d-none d-sm-inline">Inbox</span> </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Sent Itemt</span> 2 </a>
+                <a routerLink="/sent" class="nav-link px-0"> <span class="d-none d-sm-inline">Sent Itemt</span></a>
               </li>
             </ul>
           </li>
@@ -20,24 +20,36 @@
               <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">John</span> </a>
             <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
               <li class="w-100">
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Inbox</span> </a>
+                <a routerLink="/inbox" class="nav-link px-0"> <span class="d-none d-sm-inline">Inbox</span> </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Drafts</span> </a>
+                <a routerLink="/drafts" class="nav-link px-0"> <span class="d-none d-sm-inline">Drafts</span> </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Deleted Items</span>  </a>
+                <a routerLink="/deleted" class="nav-link px-0"> <span class="d-none d-sm-inline">Deleted Items</span>  </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Sent Item</span> </a>
+                <a routerLink="/sent" class="nav-link px-0"> <span class="d-none d-sm-inline">Sent Item</span> </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Out Box</span> </a>
+                <a routerLink="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Out Box</span> </a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
+    </div>
+    <div class="col-auto col-md-9 col-xl-10 px-sm-10 px-0 ">
+      <table class="table">
+        <tbody class="table-group-divider">
+        <tr *ngFor="let i of inbox">
+          <th scope="row">{{i.id}}</th>
+          <td>{{i.name}}</td>
+          <td>{{i.status}}</td>
+          <td>{{i.text}}</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
