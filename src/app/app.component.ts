@@ -38,5 +38,5 @@ export class AppComponent {
       "status": "Hellodas for late repon",
       "text": "Hello Cotaee",
     },
-  ]
+  ];
 }

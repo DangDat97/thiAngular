@@ -10,7 +10,7 @@ import { SentComponent } from './sent/sent.component';
 import { DraftsComponent } from './drafts/drafts.component';
 import { DeletedComponent } from './deleted/deleted.component';
 const appRoutes: Routes =[
-  {path:'', component:MainComponent},
+  {path:'/', component:AppComponent},
   {path:'/inbox', component:InboxComponent},
   {path:'/drafts', component:DraftsComponent},
   {path:'/deleted', component:DeletedComponent},
