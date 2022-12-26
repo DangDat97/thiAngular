@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+}
+
+.bg-grey{
+  background-color: #80808059;
+}
+
+
+a {
+  color: black;
+  font-size:22px;
+  font-weight: normal;
+}
+a:hover{
+
+}
+.collapse{
+  width: 100%;
+}
+ul{
+  width: 100%;
+}
+ul > li{
+  width: 100%;
+}
+.collapse > li{
+  width: 100%;
+  padding: 10px 20px;
+}
+.collapse > li:hover{
+  background-color: #2b75fb;
+  color: white;
+  border-radius: 3px;
+}
+.collapse > li:hover > a{
+  color: white;
+}
